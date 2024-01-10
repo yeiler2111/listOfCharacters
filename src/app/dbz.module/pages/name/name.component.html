@@ -1,0 +1,10 @@
+<h1>{{ getTitle() }}</h1>
+
+<div class="row">
+  <div class="col">
+    <dbz-list [characterList]="getCharacter()" (onDeleteId)="onDeleteCharacter($event)"></dbz-list>
+  </div>
+  <div class="col">
+    <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+  </div>
+</div>
